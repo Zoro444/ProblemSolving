@@ -18,6 +18,3 @@ let productExceptSelf = function(nums) {
     })
 };
 
-
-
-console.log(productExceptSelf([0,4,0]));
