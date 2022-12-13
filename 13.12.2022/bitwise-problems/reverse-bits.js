@@ -16,6 +16,6 @@ function reverseBits(dec) {
      }
   }
     //for check -> console.log((dec >>> 0).toString(2));
-    return dec;
+   return dec;
 } /* time complexity = O(1) space complexity = O(1) */
   
