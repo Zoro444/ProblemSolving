@@ -22,6 +22,6 @@ let singleNonDuplicate = function(nums) {
       else return nums[center + left]
     }
   }
-};//O(logn)
+};//O(log n)
 
 
