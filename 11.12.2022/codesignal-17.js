@@ -1,3 +1,3 @@
 function solution(n, k) {
-  return  n & ~(n << k - 1); //O(1)      
+  return  n & ~(1 << k - 1); //O(1)      
 };
