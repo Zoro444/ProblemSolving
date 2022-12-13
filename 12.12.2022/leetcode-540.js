@@ -3,7 +3,7 @@ let singleNonDuplicate = function(nums) {
   let right = nums.length - 1;
   let center = 0;
   
-  for (let i = 0; i < nums.length; i++) {//O(logn)
+  for (let i = 0; i < nums.length; i++) {//O(log n)
     center = (right - left) / 2;
     if (right - left === 2) {
       if (nums[left] === nums[left + center]) return nums[right];
