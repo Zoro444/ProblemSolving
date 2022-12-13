@@ -7,7 +7,7 @@
 */
 
 let isPalindrome = function(s) {
-    let str = '';
+    let str = ''; //space O(1)
     s = s.toLowerCase(); //time O(n)
     
     for (let i = 0; i < s.length; i++) { //time O(n)
@@ -21,4 +21,4 @@ let isPalindrome = function(s) {
       if (str[i] !== str[j]) return false;
     }
     return true; 
-}; /* time complexity = O(2n + n/2) = O(n) space complexity = O(n) */
+}; /* time complexity = O(2n + n/2) = O(n) space complexity = O(1 + n) = O(n) */
