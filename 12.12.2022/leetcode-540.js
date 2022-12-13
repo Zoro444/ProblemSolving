@@ -4,8 +4,8 @@ let singleNonDuplicate = function(nums) {
   let x = nums.length - 1;
   let center = 0;
   if (nums.length === 1) return nums[0];
-  
-  for (let i = 0; i < x; x / 2) {//O(log n)
+
+  for (let i = 0; i < x; x /= 2) {//O(log n)
     center = (right - left) / 2;
     if (right - left === 2) {
       if (nums[left] === nums[left + center]) return nums[right];
