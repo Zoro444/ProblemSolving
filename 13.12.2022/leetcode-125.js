@@ -8,16 +8,16 @@
 
 let isPalindrome = function(s) {
     let str = '';
-    s = s.toLowerCase();// O(n)
+    s = s.toLowerCase(); //time O(n)
     
-    for (let i = 0; i < s.length; i++) { //O(n)
+    for (let i = 0; i < s.length; i++) { //time O(n)
       if (s[i].charCodeAt() >= 48 && s[i].charCodeAt() <= 57 
        || s[i].charCodeAt() >= 65 && s[i].charCodeAt() <= 90 
        || s[i].charCodeAt() >= 97 && s[i].charCodeAt() <= 122
-       ) str += s[i];
+       ) str += s[i]; //space O(n)
     }
 
-    for (let i = 0,j = str.length - 1; i < Math.floor(str.length / 2); i++, j--) {// O(n/2)
+    for (let i = 0, j = str.length - 1; i < Math.floor(str.length / 2); i++, j--) { //time O(n/2)
       if (str[i] !== str[j]) return false;
     }
     return true; 
