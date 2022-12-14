@@ -6,15 +6,15 @@ function countOfOne(dec, i ,j) {
   let x = 0;
   let y = 0;
 
-  1 << i - 1 & dec? x = 1 : x = 0;
-  1 << j - 1 & dec? y = 1 : y = 0;
+  1 << i  & dec? x = 1 : x = 0;
+  1 << j  & dec? y = 1 : y = 0;
 
   if (x === y) {
     return dec;
   } 
 
-  dec ^= (1 << i - 1)
-  dec ^= (1 << j - 1)
+  dec ^= (1 << i )
+  dec ^= (1 << j )
 
   return dec;
 }
