@@ -5,7 +5,7 @@
 
 function reverseList(head) {
   let lastNode;
-  if (head && head.next) { //
+  if (head && head.next) {
     recursion(head.next, head);
     head.next = null;
   }
