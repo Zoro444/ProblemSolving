@@ -4,7 +4,7 @@
     and return the new head.
 */
 
-function removeElements(head, val) {//time O(n) space O(n)
+function removeElements(head, val) {//time O(n) space O(1)
     while (head !== null){
        if (head.val !== val) {
           head.next = removeElements(head.next, val);  
@@ -14,4 +14,4 @@ function removeElements(head, val) {//time O(n) space O(n)
     }
     return head;
 }
-/* time complexity = O(n) space complexity = O(n) */
+/* time complexity = O(n) space complexity = O(1) */

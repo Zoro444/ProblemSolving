@@ -4,7 +4,7 @@
   Return the linked list sorted as well.
 */
 
- function deleteDuplicates(head) { //time O(n) space O(n)
+ function deleteDuplicates(head) { //time O(n) space O(1)
     while (head !== null){
       if (head.next !== null && head.next.val !== head.val) {
         head.next = deleteDuplicates(head.next);  
@@ -18,4 +18,4 @@
       }
     }
     return head;
-}; /* time complexity = O(n) space complexity = O(n) */
+}; /* time complexity = O(n) space complexity = O(1) */
