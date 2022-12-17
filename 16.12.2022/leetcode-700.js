@@ -3,7 +3,7 @@
  */
 
 function searchBST(root, val) {
-  while(root) {
+  while (root) {
     if (val === root.val){
       return root;
     }
@@ -11,7 +11,7 @@ function searchBST(root, val) {
       root = root.left;
     }
     else {
-      root = root.right
+      root = root.right;
     }
   }
   return null;

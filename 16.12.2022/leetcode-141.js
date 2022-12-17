@@ -11,7 +11,7 @@ function hasCycle(head) {
     else {
       return true;
     }
-      if (head.next) {
+    if (head.next) {
         head = head.next;
       }
     else { 
