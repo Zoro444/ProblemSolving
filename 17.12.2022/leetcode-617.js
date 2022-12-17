@@ -8,7 +8,7 @@ function mergeTrees(root1, root2) {
         merge(root1, root2);
     }
     
-    return root2 && !root1 ? root2 : root1 ;
+    return root2 && !root1 ? root2 : root1;
 
     function merge (node1, node2) {//time O(n)
        if (node1 && node2) { 
