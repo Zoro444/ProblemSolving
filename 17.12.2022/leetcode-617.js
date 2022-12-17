@@ -29,9 +29,9 @@ function mergeTrees(root1, root2) {
        }
 
        if (!node1.right && node2.right) {
-         node1.right = new TreeNode(); //space O(n)
+         node1.right = new TreeNode(); //space O(m)
          merge(node1.right, node2.right)
        }
     }
-}; /* time complexity = O(n) space complexity = O(n) */
+}; /* time complexity = O(n) space complexity = O(n + m) */
  
