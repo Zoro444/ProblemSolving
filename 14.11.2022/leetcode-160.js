@@ -32,7 +32,7 @@ function getIntersectionNode(headA, headB) {
 
     while (headA) {
         if (headA === headB) {
-             return headA
+             return headA;
         }
         headA = headA.next;
         headB = headB.next;
