@@ -4,13 +4,13 @@
 */
 
 function isBalanced(root) {
-    let rootLeftDept = 0;
+    let rootLeftDepth = 0;
     let rootRightDepth = 0; 
     let balanced = true; 
     
     if (root) {
         if (root.left){ 
-          rootLeftDept = recursion(root.left);// time O(n / 2)
+          rootLeftDepth = recursion(root.left);// time O(n / 2)
           if (!balanced) return false;
         }
      
@@ -20,7 +20,7 @@ function isBalanced(root) {
         }
     }
 
-    if (rootLeftDept - rootRightDepth > 1 || rootRightDepth - rootLeftDept > 1) {
+    if (rootLeftDepth - rootRightDepth > 1 || rootRightDepth - rootLeftDepth > 1) {
         balanced = false;
     }
  
