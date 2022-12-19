@@ -5,7 +5,9 @@
 */
 
 function mergeTwoLists(list1, list2) {
-  if (!list1 || !list2) return list1 ? list1 : list2;
+  if (!list1 || !list2) {
+    return list1 ? list1 : list2;
+  }
 
   let ptrList1 = list1;
   let ptrList2 = list2;
