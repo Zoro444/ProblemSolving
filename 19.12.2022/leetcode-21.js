@@ -14,7 +14,7 @@ function mergeTwoLists(list1, list2) {
   let firstNode = new ListNode(0, list1);
   let previousPtrOfList1 = new ListNode(0, list1);
 
-  while (true) {
+  while (ptrList2) {
     if (ptrList2 && ptrList2.val < ptrList1.val) {
       nextPtrOfList2 = ptrList2.next;
       ptrList2.next = ptrList1;
@@ -40,10 +40,6 @@ function mergeTwoLists(list1, list2) {
       ptrList1.next = ptrList2;
       return firstNode.next;
     }
-
-    if (!ptrList2) {
-        return firstNode.next;
-    }
-  }  
+  }
+  return firstNode.next;  
 };  /* time complexity = O(n * m) space complexity = O(1) */
-
