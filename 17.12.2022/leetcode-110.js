@@ -47,5 +47,5 @@ function isBalanced(root) {
     return nodeLeftDepth > nodeRightDepth ? nodeLeftDepth : nodeRightDepth;
   };
   return balanced;
-}; /* time complexity = O(n / 2 + n / 2) = O(n) space complexity = O(1) */ 
+}; /* time complexity = O(n / 2 + n / 2) = O(n) space complexity = O(n) */ 
  

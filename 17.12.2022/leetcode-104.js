@@ -7,7 +7,7 @@
 function maxDepth(root) {
   let currentDepth = 0;
   let depth = 0;
-  if (root)recursion(root);
+  if (root) recursion(root);
 
   function recursion (node) {
     currentDepth++;

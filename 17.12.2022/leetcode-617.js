@@ -11,14 +11,12 @@ function mergeTrees(root1, root2) {
     return root2 && !root1 ? root2 : root1;
 
     function merge (node1, node2) {//time O(n)
-       if (node1 && node2) { 
-         node1.val += node2.val;
-       }
-
+       node1.val += node2.val;
+    
        if (node1.left && node2.left) {
          merge(node1.left, node2.left);  
        }  
-
+       
        if (node1.right && node2.right) {
          merge(node1.right, node2.right);
        }
